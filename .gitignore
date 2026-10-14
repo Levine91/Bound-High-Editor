@@ -1,0 +1,33 @@
+# Publish only the reviewed source/build inputs. Everything else stays local.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/CHANGELOG.md
+!/THIRD-PARTY-NOTICES.md
+!/build.ps1
+!/src/
+!/tools/
+!/third-party/
+!/.github/
+!/docs/
+!/bound-debug.asm
+!/bound-save.asm
+!/Bound-High_VB_Debug-Restoration_v1.0.ips
+!/Bound-High_VB_Save-Support_v1.0.ips
+/tools/*
+!/tools/build-audio.ps1
+!/tools/package.ps1
+/third-party/*
+!/third-party/shrooms-vb-core/
+!/third-party/vb-patches/
+# Never commit game images, save files, projects or generated binaries.
+*.vb
+*.sram
+*.sav
+*.bhproj
+*.exe
+*.dll
+*.pdb
+*.zip
+.env*

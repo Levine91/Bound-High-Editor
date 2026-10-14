@@ -1,0 +1,14 @@
+* text=auto
+*.cs text eol=crlf
+*.ps1 text eol=crlf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.ips binary
+*.ico binary
+*.png binary
+
+# Preserve supplied third-party and patch sources byte-for-byte.
+/third-party/** -text
+/bound-debug.asm -text
+/bound-save.asm -text

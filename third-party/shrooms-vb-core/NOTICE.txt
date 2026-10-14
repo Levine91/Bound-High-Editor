@@ -1,0 +1,24 @@
+Shrooms Virtual Boy emulation core
+Author: Guy Perfect and contributors, Planet Virtual Boy.
+Upstream: https://git.virtual-boy.com/PVB/shrooms-vb-core
+Snapshot: 31b7403252 (2026-05-21, Correction for negative affine parallax).
+
+The core/ sources are copied unchanged from the upstream snapshot used by Lemur.
+The editor's AudioNative.c adapter is separate; it is not an upstream component.
+No Lemur frontend code is included. No game ROM, game sound driver, saved game
+state, waveform, or music data is included in the editor distribution.
+
+License provenance:
+The author's public PVB emulator project licensing statement says:
+"This project will be released under the terms of the zlib license."
+https://www.virtual-boy.com/forums/t/pvb-collaborative-emulator/
+(Guy Perfect, License section, checked 2026-10-05.)
+
+That statement is the licensing basis used here. The split core repository's
+snapshot does not itself contain a LICENSE file. Lemur's MIT package metadata
+is not treated as a separate license grant for this core. The zlib terms are
+reproduced in ZLIB.txt. Upstream authorship is retained and no ownership of
+the upstream code is claimed by this editor.
+
+The DLL is compiled with the Microsoft C runtime statically linked. The user
+does not need a separately installed emulator, Python, compiler, or Ghidra.
