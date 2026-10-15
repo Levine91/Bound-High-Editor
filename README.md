@@ -5,25 +5,6 @@ A Windows x64 level editor for Bound High! on Nintendo Virtual Boy by Levine91
 Edit Adventure of Chalvo, Score Attack!!, and Pocket and Cushion stages,
 save your work as a project, and export a separate patched ROM.
 
-## Getting started
-
-1. Download BH-Editor-v1.0-win64.zip from this repository's Releases page.
-2. Extract the entire ZIP and run BH-Editor.exe (Keep BoundHighAudio.dll beside it.)
-3. Choose ROM > Load ROM and select your supported original ROM.
-4. Make your edits, then File > Save Project and ROM > Export ROM.
-
-Requires Windows x64 with .NET Framework 4.x. No compiler, Python, Ghidra,
-or external emulator is required to run the release. You must provide your
-own ROM; game ROMs, save files, music and graphics dumps are not included.
-
-Both the Prototype 2 ROM and Thunderstruck's ROM with Activated Debug Features are both supported.
-
-At startup, the editor looks beside the executable and in its parent folder
-for `Bound High (World) (Proto 2).vb`, then `BH.Debug.vb`.
-The file names and SHA-1 MUST match if you wish for the Editor to load the ROM automatically.
-Alternately, you cab manually load the ROM as well if you wish to keep it in another location.
-File name does not matter going this route, only the matching SHA-1 (see below)
-
 ## Features / What Can Be Modified
 
 - All 4 Adventure Worlds: 45 editable non-boss Stages.
@@ -43,6 +24,28 @@ File name does not matter going this route, only the matching SHA-1 (see below)
 Proto 2 keeps its own engine. Exports stay **2,048 KB**, with capacity checks
 for ROM space, graphics and enemy slots. Display colors use black plus
 `#690000`, `#A20000`, and `#FA0000`, matching the verified Lemur RGB mapping.
+
+<img width="1110" height="761" alt="pic02" src="https://github.com/user-attachments/assets/175c60c1-f20f-45dd-b3ac-644dbc5ce191" />
+
+
+## Getting started
+
+1. Download BH-Editor-v1.0-win64.zip from this repository's Releases page.
+2. Extract the entire ZIP and run BH-Editor.exe (Keep BoundHighAudio.dll beside it.)
+3. Choose ROM > Load ROM and select your supported original ROM.
+4. Make your edits, then File > Save Project and ROM > Export ROM.
+
+Requires Windows x64 with .NET Framework 4.x. No compiler, Python, Ghidra,
+or external emulator is required to run the release. You must provide your
+own ROM; game ROMs, save files, music and graphics dumps are not included.
+
+Both the Prototype 2 ROM and Thunderstruck's ROM with Activated Debug Features are both supported.
+
+At startup, the editor looks beside the executable and in its parent folder
+for `Bound High (World) (Proto 2).vb`, then `BH.Debug.vb`.
+The file names and SHA-1 MUST match if you wish for the Editor to load the ROM automatically.
+Alternately, you cab manually load the ROM as well if you wish to keep it in another location.
+File name does not matter going this route, only the matching SHA-1 (see below)
 
 ## Supported ROMs
 
